@@ -3,15 +3,15 @@ import { Card, List, ListItem, ProgressBar, Text, Title, Grid } from "@tremor/re
 const ageGroups = [
   {
     ageGroup: "18-24",
-    percentage: 25,
+    percentage: 35,
   },
   {
     ageGroup: "25-34",
-    percentage: 30,
+    percentage: 39,
   },
   {
     ageGroup: "35-44",
-    percentage: 20,
+    percentage: 22,
   },
   {
     ageGroup: "45-54",
