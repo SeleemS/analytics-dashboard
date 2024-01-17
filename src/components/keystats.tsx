@@ -2,7 +2,7 @@ import { Card, Text, Metric, Flex, ProgressBar } from "@tremor/react";
 
 export default function KeyStats() {
   return (
-      <div className="flex flex-row gap-10">
+      <div className="flex flex-col sm:flex-row gap-10">
     <Card className="max-w-xs mx-auto">
       <Text>Views</Text>
       <Metric>1,341,758</Metric>
