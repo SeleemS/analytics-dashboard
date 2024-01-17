@@ -124,7 +124,7 @@ import {
   
   export default function RecentVideos() {
     return (
-      <Card className="h-fit w-full " decoration="top" decorationColor="blue">
+      <Card className="h-fit w-full " decoration="top" decorationColor="red">
         <Table>
           <TableHead>
             <TableRow>
