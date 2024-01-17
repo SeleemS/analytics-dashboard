@@ -111,14 +111,14 @@ import {
       },
       {
         name: "Video 10",
-        views: "243,800",
-        watchhours: "43,080",
-        avgvd: "9:44",
-        subsgained: "33",
-        estrev: "$97",
-        cpm: "1.1",
-        delta: "underperforming",
-        deltaType: "moderateDecrease",
+        views: "450,321",
+        watchhours: "63,278",
+        avgvd: "12:32",
+        subsgained: "78",
+        estrev: "$132",
+        cpm: "1.2",
+        delta: "overperforming",
+        deltaType: "moderateIncrease",
       },
   ];
   
