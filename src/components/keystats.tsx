@@ -118,7 +118,7 @@ const valueFormatter = (number: number) => `$${Intl.NumberFormat("us").format(nu
 
 export default function Example() {
   return (
-    <Grid numItemsSm={2} numItemsLg={4} className="gap-6 mt-4">
+    <Grid numItemsSm={2} numItemsLg={4} className="gap-8 mt-4">
       {categories.map((item) => (
         <Card key={item.title} className="w-[21vw]">
           <Flex alignItems="start">

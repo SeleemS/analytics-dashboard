@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-10 py-5 bg-slate-800">
       <KeyStats />
-      <div className="flex flex-row my-8 justify-center w-full gap-6">
+      <div className="flex flex-row my-8 justify-center w-full gap-8">
       <Audience />
       <RecentVideos/>
       </div>
