@@ -13,10 +13,10 @@ const genders = [
 
 
 const GenderDonut = () => (
-  <Card className="max-w-sm">
+  <Card className="max-w-sm h-fit">
     <Title>Gender</Title>
     <DonutChart
-      className="mt-6"
+
       data={genders}
       category="views"
       index="gender"

@@ -59,6 +59,27 @@ const data = [
     WatchHours: 2077,
     Subscribers: 4819,
     EstimatedRev: 1661,
+  },
+  {
+    Month: "Dec 23",
+    Views: 4451,
+    WatchHours: 3170,
+    Subscribers: 2031,
+    EstimatedRev: 1653,
+  },
+  {
+    Month: "Dec 24",
+    Views: 1955,
+    WatchHours: 4922,
+    Subscribers: 3433,
+    EstimatedRev: 1834,
+  },
+  {
+    Month: "Dec 25",
+    Views: 1421,
+    WatchHours: 2077,
+    Subscribers: 4819,
+    EstimatedRev: 1661,
   }
 ];
 
@@ -99,14 +120,14 @@ export default function Example() {
   return (
     <Grid numItemsSm={2} numItemsLg={4} className="gap-6 mt-4">
       {categories.map((item) => (
-        <Card key={item.title}>
+        <Card key={item.title} className="w-[21vw]">
           <Flex alignItems="start">
-            <Text>{item.title}</Text>
+            <Text className="text-semibold">{item.title}</Text>
             <BadgeDelta deltaType={item.deltaType}>{item.delta}</BadgeDelta>
           </Flex>
           <Flex className="space-x-3 truncate" justifyContent="start" alignItems="baseline">
             <Metric>{item.metric}</Metric>
-            <Text>from {item.metricPrev}</Text>
+            <Text>Last 30 days</Text>
           </Flex>
           <AreaChart
             className="mt-6 h-28"
