@@ -120,7 +120,7 @@ export default function Example() {
   return (
     <Grid numItemsSm={2} numItemsLg={4} className="gap-8 mt-4">
       {categories.map((item) => (
-        <Card key={item.title} className="w-[21vw]" decoration="top" decorationColor="red">
+        <Card key={item.title} className="w-[21vw] shadow-xl" decoration="top" decorationColor="red">
           <Flex alignItems="start">
             <Text className="text-semibold">{item.title}</Text>
             <BadgeDelta deltaType={item.deltaType}>{item.delta}</BadgeDelta>

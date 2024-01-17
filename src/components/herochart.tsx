@@ -47,7 +47,7 @@ function sumArray(array: any[], metric: string) {
   
   export default function HeroChart() {
     return (
-        <main className="w-full mb-4">
+        <main className="w-full mb-4 shadow-xl">
         <Card className="p-0">
       <TabGroup>
         <TabList>

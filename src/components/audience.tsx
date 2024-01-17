@@ -6,7 +6,7 @@ import { Card } from "@tremor/react";
 export default function Audience() {
     return (
         <main className="w-full">
-                <Card className="flex flex-col max-w-sm gap-4" decoration="top" decorationColor="red">
+                <Card className="flex flex-col max-w-sm gap-4 shadow-xl" decoration="top" decorationColor="red">
                     <GenderDonut/>
                     <AgeBar/>
                 </Card>
