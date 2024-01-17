@@ -116,7 +116,7 @@ const categories = [
 
 const valueFormatter = (number: number) => `$${Intl.NumberFormat("us").format(number).toString()}`;
 
-export default function Example() {
+export default function KeyStats() {
   return (
     <Grid numItemsSm={2} numItemsLg={4} className="gap-8 mt-4">
       {categories.map((item) => (
