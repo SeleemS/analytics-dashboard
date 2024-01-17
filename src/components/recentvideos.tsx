@@ -129,28 +129,28 @@ import {
           <TableHead>
             <TableRow>
               <TableHeaderCell>Video Name</TableHeaderCell>
-              <TableHeaderCell className="text-right">Views</TableHeaderCell>
-              <TableHeaderCell className="text-right">Watch Hours</TableHeaderCell>
-              <TableHeaderCell className="text-right">Average VD</TableHeaderCell>
-              <TableHeaderCell className="text-right">Subscribers Gained</TableHeaderCell>
+              <TableHeaderCell className="text-center">Views</TableHeaderCell>
+              <TableHeaderCell className="text-center">Watch Hours</TableHeaderCell>
+              <TableHeaderCell className="text-center">Average VD</TableHeaderCell>
+              <TableHeaderCell className="text-center">Subs Gained</TableHeaderCell>
 
-              <TableHeaderCell className="text-right">Est. Revenue</TableHeaderCell>
-              <TableHeaderCell className="text-right">CPM</TableHeaderCell>
-              <TableHeaderCell className="text-right">Overall</TableHeaderCell>
+              <TableHeaderCell className="text-center">Est. Revenue</TableHeaderCell>
+              <TableHeaderCell className="text-center">CPM</TableHeaderCell>
+              <TableHeaderCell className="text-center">Overall</TableHeaderCell>
 
             </TableRow>
           </TableHead>
           <TableBody>
             {salesPeople.map((item) => (
               <TableRow key={item.name}>
-                <TableCell>{item.name}</TableCell>
-                <TableCell className="text-right">{item.views}</TableCell>
-                <TableCell className="text-right">{item.watchhours}</TableCell>
-                <TableCell className="text-right">{item.avgvd}</TableCell>
-                <TableCell className="text-right">{item.subsgained}</TableCell>
-                <TableCell className="text-right">{item.estrev}</TableCell>
-                <TableCell className="text-right">{item.cpm}</TableCell>
-                <TableCell className="text-right">
+                <TableCell className="text-center">{item.name}</TableCell>
+                <TableCell className="text-center">{item.views}</TableCell>
+                <TableCell className="text-center">{item.watchhours}</TableCell>
+                <TableCell className="text-center">{item.avgvd}</TableCell>
+                <TableCell className="text-center">{item.subsgained}</TableCell>
+                <TableCell className="text-center">{item.estrev}</TableCell>
+                <TableCell className="text-center">{item.cpm}</TableCell>
+                <TableCell className="text-center">
                   <BadgeDelta deltaType={item.deltaType} size="xs">
                     {item.delta}
                   </BadgeDelta>
