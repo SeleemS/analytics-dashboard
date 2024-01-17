@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { Card, Text, Metric, Flex, ProgressBar } from "@tremor/react";
 import KeyStats from '@/components/keystats';
 import HeroChart from '@/components/herochart';
 import Audience from '@/components/audience';
