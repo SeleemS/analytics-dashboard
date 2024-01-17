@@ -26,7 +26,7 @@ const ageGroups = [
 export default function AgeBar() {
   return (
     <Grid numItemsSm={2} numItemsLg={1} className="gap-6">
-      <Card className="max-w-lg" decoration={top} decorationColor="indigo">
+      <Card className="max-w-lg">
         <Title>Age Groups</Title>
         <List className="mt-4">
           {ageGroups.map((group) => (
