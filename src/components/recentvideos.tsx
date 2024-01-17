@@ -124,7 +124,7 @@ import {
   
   export default function RecentVideos() {
     return (
-      <Card className="h-fit my-5 w-full">
+      <Card className="h-fit w-full">
         <Table>
           <TableHead>
             <TableRow>
