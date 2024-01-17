@@ -80,6 +80,7 @@ function sumArray(array, metric) {
               colors={["blue"]}
               valueFormatter={numberFormatter}
               showLegend={false}
+              showAnimation={true}
               yAxisWidth={50}
             />
           </TabPanel>
