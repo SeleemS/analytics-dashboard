@@ -34,9 +34,10 @@ const categories = [
 
 export default function Example() {
   return (
+    <main className="w-full mx-auto">
     <Grid numItemsSm={2} numItemsLg={4} className="gap-6">
       {categories.map((item) => (
-        <Card key={item.title}>
+        <Card key={item.title} decoration="top" decorationColor="cyan">
           <Flex alignItems="start">
             <Text>{item.title}</Text>
             <BadgeDelta deltaType={item.deltaType}>{item.delta}</BadgeDelta>
@@ -48,5 +49,6 @@ export default function Example() {
         </Card>
       ))}
     </Grid>
+    </main>
   );
 }

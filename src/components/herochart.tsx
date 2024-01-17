@@ -9,7 +9,7 @@ import {
     TabPanels,
     TabPanel,
   } from "@tremor/react";
-  
+
   type DataPoint = {
     Month: string;
     Visitors: number;
@@ -33,15 +33,15 @@ import {
     },
   ];
   
-  const numberFormatter = (value) => Intl.NumberFormat("us").format(value).toString();
+  const numberFormatter = (value: number | bigint) => Intl.NumberFormat("us").format(value).toString();
 
-const percentageFormatter = (value) =>
+const percentageFormatter = (value: number) =>
   `${Intl.NumberFormat("us")
     .format(value * 100)
     .toString()}%`;
     
-function sumArray(array, metric) {
-  return array.reduce((accumulator, currentValue) => accumulator + currentValue[metric], 0);
+function sumArray(array: any[], metric: string) {
+  return array.reduce((accumulator: any, currentValue: { [x: string]: any; }) => accumulator + currentValue[metric], 0);
 }
 
   
