@@ -141,6 +141,7 @@ export default function Example() {
             startEndOnly={true}
             showYAxis={false}
             showLegend={false}
+            showAnimation={true}
           />
         </Card>
       ))}

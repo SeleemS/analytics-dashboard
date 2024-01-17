@@ -4,6 +4,7 @@ import KeyStats from '@/components/keystats';
 import HeroChart from '@/components/herochart';
 import Audience from '@/components/audience';
 import RecentVideos from '@/components/recentvideos';
+import Geography from '@/components/geography';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Audience />
       <RecentVideos/>
       </div>
+      <Geography/>
       <HeroChart />
     </main>
   )
