@@ -132,11 +132,11 @@ import {
               <TableHeaderCell className="text-right">Views</TableHeaderCell>
               <TableHeaderCell className="text-right">Watch Hours</TableHeaderCell>
               <TableHeaderCell className="text-right">Average VD</TableHeaderCell>
-              <TableHeaderCell className="text-right">Comments</TableHeaderCell>
+              <TableHeaderCell className="text-right">Subscribers Gained</TableHeaderCell>
 
               <TableHeaderCell className="text-right">Est. Revenue</TableHeaderCell>
               <TableHeaderCell className="text-right">CPM</TableHeaderCell>
-              <TableHeaderCell className="text-right">Subscribers Gained</TableHeaderCell>
+              <TableHeaderCell className="text-right">Overall</TableHeaderCell>
 
             </TableRow>
           </TableHead>
