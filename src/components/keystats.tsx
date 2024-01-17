@@ -1,44 +1,52 @@
-import { Card, Text, Metric, Flex, ProgressBar } from "@tremor/react";
+"use client"
+import { Card, Metric, Text, Flex, BadgeDelta, DeltaType, Grid } from "@tremor/react";
 
-export default function KeyStats() {
+const categories = [
+  {
+    title: "Views",
+    metric: "1,312,699",
+    metricPrev: "829,456",
+    delta: "34.3%",
+    deltaType: "moderateIncrease",
+  },
+  {
+    title: "Watch Hours",
+    metric: "400,598",
+    metricPrev: "445,564",
+    delta: "10.9%",
+    deltaType: "moderateDecrease",
+  },
+  {
+    title: "Subscribers",
+    metric: "1,072",
+    metricPrev: "856",
+    delta: "25.3%",
+    deltaType: "moderateIncrease",
+  },
+  {
+    title: "Revenue",
+    metric: "1,598",
+    metricPrev: "$ 1,564",
+    delta: "10.9%",
+    deltaType: "moderateDecrease",
+  },
+];
+
+export default function Example() {
   return (
-      <div className="flex flex-col sm:flex-row gap-10">
-    <Card className="max-w-xs mx-auto">
-      <Text>Views</Text>
-      <Metric>1,341,758</Metric>
-      <Flex className="mt-4">
-        <Text>32% of annual target</Text>
-        <Text>$ 225,000</Text>
-      </Flex>
-      <ProgressBar value={32} className="mt-2" />
-    </Card>
-    <Card className="max-w-xs mx-auto">
-      <Text>Watch Hours</Text>
-      <Metric>255,231</Metric>
-      <Flex className="mt-4">
-        <Text>32% of annual target</Text>
-        <Text>$ 225,000</Text>
-      </Flex>
-      <ProgressBar value={32} className="mt-2" />
-    </Card>
-    <Card className="max-w-xs mx-auto">
-      <Text>Subscribers</Text>
-      <Metric>1,465</Metric>
-      <Flex className="mt-4">
-        <Text>32% of annual target</Text>
-        <Text>$ 225,000</Text>
-      </Flex>
-      <ProgressBar value={32} className="mt-2" />
-    </Card>
-    <Card className="max-w-xs mx-auto">
-      <Text>Revenue</Text>
-      <Metric>$ 1365</Metric>
-      <Flex className="mt-4">
-        <Text>32% of annual target</Text>
-        <Text>$ 225,000</Text>
-      </Flex>
-      <ProgressBar value={32} className="mt-2" />
-    </Card>
-</div>
+    <Grid numItemsSm={2} numItemsLg={4} className="gap-6">
+      {categories.map((item) => (
+        <Card key={item.title}>
+          <Flex alignItems="start">
+            <Text>{item.title}</Text>
+            <BadgeDelta deltaType={item.deltaType}>{item.delta}</BadgeDelta>
+          </Flex>
+          <Flex justifyContent="start" alignItems="baseline" className="truncate space-x-3">
+            <Metric>{item.metric}</Metric>
+            <Text className="truncate">from {item.metricPrev}</Text>
+          </Flex>
+        </Card>
+      ))}
+    </Grid>
   );
 }
