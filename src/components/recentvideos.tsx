@@ -128,7 +128,7 @@ import {
         <Table>
           <TableHead>
             <TableRow>
-              <TableHeaderCell>Name</TableHeaderCell>
+              <TableHeaderCell>Video Name</TableHeaderCell>
               <TableHeaderCell className="text-right">Views</TableHeaderCell>
               <TableHeaderCell className="text-right">Watch Hours</TableHeaderCell>
               <TableHeaderCell className="text-right">Average VD</TableHeaderCell>

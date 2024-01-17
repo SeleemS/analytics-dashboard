@@ -32,10 +32,10 @@ const categories = [
   },
 ];
 
-export default function Example() {
+export default function KeyStats() {
   return (
     <main className="w-full mx-auto">
-    <Grid numItemsSm={2} numItemsLg={4} className="gap-6">
+    <Grid numItemsSm={2} numItemsLg={4} className="gap-6 mt-7">
       {categories.map((item) => (
         <Card key={item.title} decoration="top" decorationColor="cyan">
           <Flex alignItems="start">
