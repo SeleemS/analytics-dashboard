@@ -128,7 +128,7 @@ import {
         <Table>
           <TableHead>
             <TableRow>
-              <TableHeaderCell>Video Name</TableHeaderCell>
+              <TableHeaderCell className="text-center">Video Name</TableHeaderCell>
               <TableHeaderCell className="text-center">Views</TableHeaderCell>
               <TableHeaderCell className="text-center">Watch Hours</TableHeaderCell>
               <TableHeaderCell className="text-center">Average VD</TableHeaderCell>
@@ -145,7 +145,7 @@ import {
               <TableRow key={item.name}>
                 <TableCell className="text-center">{item.name}</TableCell>
                 <TableCell className="text-center">{item.views}</TableCell>
-                <TableCell className="text-center">{item.watchhours}</TableCell>
+                <TableCell className="text-center font-semibold">{item.watchhours}</TableCell>
                 <TableCell className="text-center">{item.avgvd}</TableCell>
                 <TableCell className="text-center">{item.subsgained}</TableCell>
                 <TableCell className="text-center">{item.estrev}</TableCell>
