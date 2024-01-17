@@ -12,7 +12,7 @@ import {
   const salesPeople = [
     {
       name: "Video 1",
-      views: 450321,
+      views: "450,321",
       watchhours: "63,278",
       avgvd: "12:32",
       subsgained: "78",
@@ -45,7 +45,7 @@ import {
     },
     {
         name: "Video 4",
-        views: 450321,
+        views: "450,321",
         watchhours: "63,278",
         avgvd: "12:32",
         subsgained: "78",
@@ -78,7 +78,7 @@ import {
       },
       {
         name: "Video 7",
-        views: 450321,
+        views: "450,321",
         watchhours: "63,278",
         avgvd: "12:32",
         subsgained: "78",
