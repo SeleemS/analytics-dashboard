@@ -3,7 +3,7 @@ import { Card, DonutChart, Title } from "@tremor/react";
 const genders = [
   {
     gender: "Male",
-    views: 9800,
+    views: 9810,
   },
   {
     gender: "Female",
